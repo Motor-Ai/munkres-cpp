@@ -107,9 +107,9 @@ Requirements:
 
 
 
-For development purpose in the project implemented a variety of build targets.
+For development purpose in the project implemented several build targets.
 All of them help to continuously check correctness of algorithm implementation, performance, memory management, etc.
-To configure project in development mode ```-DMUNKRESCPP_DEVEL_MODE=ON``` option must be passed to CMake.
+To configure project in development mode checkout on ```devel``` branch.
 
 Launch of unit tests.
 The project contains unit tests to build and launch it performs the following steps:
@@ -117,7 +117,7 @@ The project contains unit tests to build and launch it performs the following st
 $ git clone https://github.com/saebyn/munkres-cpp.git
 $ cd munkres-cpp
 $ mkdir build && cd build
-$ cmake -DCMAKE_BUILD_TYPE=Debug -DMUNKRESCPP_DEVEL_MODE=ON ..
+$ cmake -DCMAKE_BUILD_TYPE=Debug ..
 $ make tests
 $ tests/munkrestest
 ```
@@ -146,7 +146,7 @@ Buildning microbenchmarks:
 $ git clone https://github.com/saebyn/munkres-cpp.git
 $ cd munkres-cpp
 $ mkdir build && cd build
-$ cmake -DCMAKE_BUILD_TYPE=Release -DMUNKRESCPP_DEVEL_MODE=ON ..
+$ cmake -DCMAKE_BUILD_TYPE=Release ..
 $ make benchmarks
 ```
 To get comparable results it's required to generate data set wich will be used for all benchmarks:
